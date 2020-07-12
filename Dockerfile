@@ -18,7 +18,7 @@ RUN set -ex &&\
     echo $TZ > /etc/timezone && \
 
     cd /tmp && \
-        git clone --depth=1 https://github.com/chengr28/Pcap_DNSProxy.git /tmp/Pcap_DNSProxy && \
+        git clone --depth=1 https://github.com/aiastia/pcap_dnsproxy.git /tmp/Pcap_DNSProxy && \
         cd /tmp/Pcap_DNSProxy/Source/Auxiliary/Scripts && \
         sh CMake_Build.sh && \
         mv /tmp/Pcap_DNSProxy/Source/Release /root/pcap_dnsproxy && \
